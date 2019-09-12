@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SITEZIN</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+        function fun() {
+            var cont2 = 0;
+            var cont3 =0;
+            var cont5=0;
+            var cont7=0;
+            var cont11=0;
+            var cont13=0;
+            var a = Number.parseFloat(document.getElementById("numero").value);
+            document.write(a + "<br />");
+            while (a != 1) {
+                if (a % 2 == 0) {
+                    a = a / 2;
+                    document.write(a + "<br />");
+                    cont2++;
+                } else if (a % 3 == 0) {
+                    a = a / 3;
+                    document.write(a + "<br />");
+                    cont3++;
+                    cont3++;
+                } else if (a % 5 == 0) {
+                    a = a / 5;
+                    document.write(a + "<br />");
+                    cont5++;
+                } else if (a % 7 == 0) {
+                    a = a / 7;
+                    document.write(a + "<br />");
+                    cont7++;
+                } else if (a % 11 == 0) {
+                    a = a / 11;
+                    document.write(a + "<br />");
+                    cont11++;
+                } else if (a % 13 == 0) {
+                    a = a / 13;
+                    document.write(a + "<br />");
+                    cont13++;
+                }else{
+                    a=a/a;
+                    document.write(a+"<br />")
+                    document.write("Número primo, cuidado")
+                }
+            }
+            document.write("<p class='r'> 2 elevado a: " + cont2+"<br /> 3 elevado a: "+cont3+"<br /> 5 elevado a: "+cont5+"<br /> 7 elevado a: "+cont7+"<br /> 11 elevado a: "+cont11+"<br /> 13 elevado a: "+cont13+"</p>");
+        }
+    </script>
+</head>
+
+<body>
+    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+    <center>
+        <div class="css">
+            <form>
+                <textarea name="message" rows="5" cols="30" id="numero"></textarea>
+                <br>
+                <input type="submit" onclick="fun()" value="Enviar" id="enviar">
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>

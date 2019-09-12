@@ -1,0 +1,18 @@
+.css{
+	width: 200pt;
+	height: 170pt;
+	background-color: deepskyblue;
+}
+#numero{
+position: relative;
+top: 50pt;
+}
+#enviar{
+    position: relative;
+top: 60pt;
+}
+.r{
+	position:absolute;
+	top: 10px;
+	left: 40px;;
+}
